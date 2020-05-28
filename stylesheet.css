@@ -1,0 +1,1598 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/*Head section background*/
+
+
+/*Nurse Department Logo*/
+
+.Nurse-logo {
+    float: left;
+    width: 35%;
+    padding: 0;
+
+}
+
+
+
+
+h1 {
+    text-align: center;
+    font-size: 28pt;
+    color: white;
+
+}
+
+
+/*Main Navigation Bar*/
+
+
+
+.custom-nav {
+    background-color: #9EB0CB;
+    border-top: 3pt solid #648EB8;
+    border-bottom: 3pt solid #648EB8;
+    font-size: 11pt;
+    opacity: 0.9;
+    width: 100%;
+    font-family: Kadwa;
+    font-weight: bold;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+
+.custom-nav a {
+    color: black !important;
+    font-weight: bold;
+
+}
+
+.custom-nav li {
+    margin-right: 20px;
+
+}
+
+.custom-nav ul {
+    margin-left: 10%;
+
+
+}
+
+@media (max-width: 1020px){
+    .custom-nav li{
+        margin-right: 0;
+    }
+    
+    .custom-nav ul{
+        margin-left: 10%;
+    }
+    
+    
+}
+
+
+
+.custom-nav li:hover {
+    border-bottom: 2pt solid #FFDD00;
+
+}
+
+.custom-nav .active {
+    background-color: transparent;
+    border-bottom: 2pt solid #FFDD00;
+
+}
+
+.navbar-brand {
+    margin-left: 5%;
+}
+
+/*Scroll to top button*/
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #FFDD00;
+    bottom: 25px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center; 
+    line-height: 50px;
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/*Main Navigation dropdown list*/
+
+.dropdown-menu a {
+    display: inline-block;
+    color: black !important;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-menu a:hover {
+    background-color: #BACBD9;
+    color: black;
+}
+
+
+
+
+/* Bootstrap CAROUSEL Slideshow
+-------------------------------------------------- */
+#myCarousel {
+    max-width: 10000px;
+    position: relative;
+    margin: auto;
+
+}
+
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+/* caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+
+}
+
+.first-slide,
+.second-slide,
+.third-slide,
+.forth-slide,
+.fift-slide {
+    width: 100%;
+    border-radius: 0 0 85% 85% / 30%;
+    border-bottom: 3pt solid #648EB8;
+}
+
+.carousel-caption h1 {
+    text-shadow: 2px 2px #393E46;
+    font-size: 40pt;
+}
+
+.carousel-caption .text {
+    font-size: 18pt;
+    color: #f1f1f1;
+
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    width: 100%;
+    height: auto;
+    background-color: #777;
+    border-radius: 0 0 85% 85% / 30%;
+}
+
+
+.carousel-item {
+    position: absolute;
+    min-width: 100%;
+    height: auto;
+
+}
+
+.carousel-caption {
+    text-shadow: 1px 1px #393E46;
+    margin-bottom: 8%;
+}
+
+
+.carousel-caption a{
+    font-size: 20pt;
+}
+
+.carousel-caption .btn {
+    margin-top: 5%;
+    
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+
+@media (max-width: 840px) {
+    .carousel-caption {
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .carousel-caption .btn {
+        margin-top: -80px;
+    }
+
+    .carousel-caption h1 {
+        padding-bottom: 0;
+        font-size: 35pt;
+    }
+
+    .carousel-caption .btn {
+        font-size: 15pt;
+
+    }
+}
+
+@media (max-width: 715px) {
+    .carousel-caption {
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .carousel-caption .btn {
+        margin-top: -80px;
+    }
+
+    .carousel-caption h1 {
+        padding-bottom: 0;
+        font-size: 33pt;
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-caption .text {
+        font-size: 0;
+        visibility: hidden;
+    }
+
+    .carousel-caption h1 {
+        padding-bottom: 0;
+        font-size: 30pt;
+        margin: 0;
+    }
+}
+
+@media (max-width: 525px) {
+    .carousel-caption .text {
+        font-size: 0;
+        visibility: hidden;
+    }
+
+    .carousel-caption h1 {
+        padding-bottom: 0;
+        font-size: 25pt;
+        margin: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .carousel-caption p {
+        visibility: hidden;
+    }
+
+    .carousel-caption .btn {
+        margin-top: -80px;
+    }
+
+    .carousel-caption h1 {
+        padding-bottom: 0;
+        font-size: 35pt;
+    }
+}
+
+@media (max-width: 375px) {
+    .carousel-caption .text {
+        font-size: 0;
+        visibility: hidden;
+    }
+
+    .carousel-caption h1 {
+        padding-bottom: 0;
+        font-size: 20pt;
+        margin: 0;
+    }
+
+    .carousel-caption .btn {
+        font-size: 12pt;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 320px) {
+    .carousel-caption .text {
+        font-size: 0;
+        visibility: hidden;
+    }
+
+    .carousel-caption h1 {
+        padding-bottom: 0;
+        font-size: 18pt;
+        margin-bottom: -10px
+    }
+
+    .carousel-caption .btn {
+        font-size: 12pt;
+        visibility: visible;
+    }
+}
+
+
+/*Section 1*/
+.section1-container {
+    background-color: #fff;
+    height: auto;
+
+}
+
+.apply-btn {
+    border: none;
+    cursor: pointer;
+    background-color: #648EB8;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    position: inherit;
+}
+
+
+.apply-btn:hover {
+    background-color: #15487b;
+    color: white;
+    text-decoration: none;
+}
+
+.section1-container {
+    padding: 45px;
+    z-index: -1;
+}
+
+.section1-container h2 {
+    font-size: 35pt;
+    color: black;
+    text-align: center;
+    padding: 35px;
+    font-family: 'Belgrano';
+}
+
+@media (max-width: 700px){
+    .section1-container h2{
+        font-size: 20pt;
+    }
+    
+}
+
+.section1-container p {
+    font-size: 13pt;
+    padding: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 22pt;
+    text-align: center;
+}
+
+.pledge-container1 {
+    padding: 45px;
+    height: auto;
+    background-color: #6c757d;
+    color: white;
+    border-top: 3pt solid #FFDD00;
+    border-bottom: 3pt solid #FFDD00;
+}
+
+.pledge-container1 h2 {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Belgrano';
+}
+
+.pledge-container1 p {
+    font-size: 13pt;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.pledge-container2 {
+    padding: 45px;
+    height: auto;
+}
+
+.pledge-container2 h2 {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Belgrano';
+}
+
+.pledge-container2 p {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 13pt;
+}
+
+/* Style tab links  News Events Campus Life*/
+
+
+
+.tablink {
+    display: inline;
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 33.3%;
+
+}
+
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 60px 20px;
+    height: 100%;
+
+
+}
+
+.tabcontent h2 {
+    font-size: 18pt;
+    color: black;
+    text-align: center;
+    padding: 35px;
+    font-family: verdana;
+}
+
+.tabcontent h3 {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Belgrano';
+}
+
+.tabcontent p {
+    font-size: 13pt;
+    padding: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 22pt;
+    text-align: center;
+
+}
+
+/*Tab Headings background color*/
+
+.row .news {
+    float: left;
+}
+
+#News {
+    background-color: #9EB0CB;
+}
+
+#Events {
+    background-color: #648EB8;
+}
+
+#NCUNA {
+    background-color: #9EB0CB;
+}
+
+
+
+/*News Section Content*/
+
+/*News article images*/
+.rounded-circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-lg-4 p {
+    margin: 0;
+    padding: 15px;
+    color: gray;
+}
+
+.news-wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.news {
+    padding: 25px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.news p {
+    font-size: 12pt;
+}
+
+.news h2 {
+    font-size: 14pt;
+    padding: 20px;
+}
+
+
+/* Events Section*/
+
+/* Slideshow container */
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 520px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.swiper-slide .imgBX {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.swiper-slide .img-box img {
+    width: 100%;
+
+}
+
+.swiper-slide .details {
+    box-sizing: border-box;
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+
+}
+
+.swiper-slide .details h3 {
+    box-sizing: border-box;
+    color: black;
+    font-size: 10px;
+
+
+}
+
+/*NCUNA Section*/
+
+#NCUNA img {
+
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
+}
+
+/*SEction 2*/
+
+.section2-container {
+    background-image: url(images/Nurse-with-heart-hands.jpg);
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    width: 100%;
+    height: 100%;
+
+}
+
+/*statements vision, aim value*/
+.statements {
+    text-align: center;
+    padding: 60px;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+
+
+}
+
+.statements hr {
+    background-color: white;
+}
+
+.statements p {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 13pt;
+
+
+}
+
+.statements h2 {
+    padding: 30px;
+    color: #FFDD00;
+
+}
+
+
+/*sec-wrapper*/
+.sec-wrapper{
+    text-align: center;
+    height: auto;
+    text-align: center;
+    border-top: 3pt solid #FFDD00;
+    padding: 25px;
+       padding-bottom: 100px;
+}
+
+.sec-wrapper h2{
+    padding: 20px;
+    font-family: 'Belgrano';
+    font-size: 35pt;
+}
+
+.sec-wrapper img{
+width: 80%;
+
+}
+
+.sec-wrapper p{
+    margin-top: -20px;
+    color: gray;
+}
+
+
+
+/*Statistics container*/
+.stat {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 3pt solid #FFDD00;
+    border-bottom: 3pt solid #FFDD00;
+}
+
+.stat i {
+    font-size: 50px;
+}
+
+.stat-items h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #648EB8;
+}
+
+.stat p {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/*section 3*/
+
+.section3-container {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #6c757d;
+    padding: 25px;
+}
+
+.section3-container h2 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: 'Belgrano';
+
+}
+
+.sec3-img {
+    display: inline-block;
+    margin: 0 20px 0 0;
+
+}
+
+.sec3-img {
+    font-size: 14pt;
+    font-weight: 400;
+    color: white;
+
+}
+
+/*Fotter*/
+
+footer {
+    border-top: 3pt solid #FFDD00;
+    background-color: #9EB0CB;
+    height: auto;
+}
+
+footer a {
+    color: white;
+
+}
+
+footer .links a:hover {
+    color: black;
+}
+
+footer .fa-link {
+    font-size: 10pt;
+}
+
+
+
+/*Programs Page*/
+
+
+.program-design {
+    height: 100%;
+}
+
+.program-design h2 {
+    text-align: center;
+    padding: 35px;
+    margin-top: 25px;
+    font-family: 'Belgrano';
+    font-size: 35pt;
+}
+
+
+.program-design p {
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 13pt;
+}
+
+.credits {
+    margin: 0;
+    padding: 35px;
+    height: auto;
+    background-color: #648EB8;
+    color: white;
+    border-top: 3pt solid #FFDD00;
+    border-bottom: 3pt solid #FFDD00;
+
+}
+
+.credits h2 {
+    font-size: 18pt;
+    font-family: arial;
+}
+
+.credits h3 {
+    text-align: center;
+    font-size: 14pt;
+}
+
+.img-wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.img-wrapper img {
+    padding: 35px;
+    width: 100%;
+}
+
+/*Admission container*/
+.admission-content {
+    padding: 35px;
+    height: auto;
+    background-color: #393E46;
+    color: white;
+    border-bottom: 3pt solid #FFDD00;
+
+
+}
+
+.admission-content h2 {
+    font-family: 'Belgrano';
+    font-size: 35pt;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: #FFDD00;
+
+}
+
+.admission-content h2:after {
+    content: '';
+    background: white;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
+}
+
+.admission-content p {
+    font-size: 13pt;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+/*requirement container*/
+.requirement-content {
+    padding: 35px;
+    height: auto;
+}
+
+
+.requirement-content ul {
+    margin-left: 5%;
+    line-height: 2;
+    font-size: 13pt;
+}
+
+
+.requirement-content h2 {
+    font-family: 'Belgrano';
+    font-size:50px;
+    text-align: center;
+    font-size: 20pt;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.requirement-content h2:after {
+    content: '';
+    background: #333;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
+}
+
+.requirement-content h3 {
+    padding: 20px;
+}
+
+
+.img-con {
+    text-align: center;
+    float: right;
+}
+
+/*program-objective*/
+.program-objective {
+    border-top: 3pt solid #648EB8;
+    color: white;
+    background-image: url(images/176899.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.program-objective ul {
+    font-size: 13pt;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.program-objective h2 {
+    font-family: 'Belgrano';
+    font-size: 35pt;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+    text-shadow: 2px 2px #393E46;
+}
+
+.program-objective ul {
+    line-height: 2;
+}
+
+.tuition-fees {
+    background-image: url(images/Healthcar.jpg);
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    border-top: 3pt solid #FFDD00;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tuition-fees a {
+
+    font-size: 60px;
+    color: #648EB8;
+    font-weight: bold;
+}
+
+.tuition-fees a:hover {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.tuition-fees i {
+    font-size: 80px;
+    color: #FFDD00;
+}
+
+/*Faculty and Staff Page*/
+
+.faculty-banner{
+    text-align: center;
+    background-image: url(images/doctor-s-stethoscope.jpg);
+    background-size: cover;
+    height: 720px;
+    background-position: center;
+    background-repeat: no-repeat;
+     border-radius: 0 0 85% 85% / 30%;
+    border-bottom: 5px solid #648EB8;
+}
+
+
+
+.faculty-banner h2{
+    color: white;
+    font-size: 50pt;
+    text-align: center;
+    padding-top: 20%;
+    text-shadow: 2px 2px black;
+}
+
+.faculty-banner a{
+    font-size: 20pt;
+    padding: 15px;
+}
+
+
+@media (max-width: 800px){
+    .faculty-banner{
+        height: 420px;
+    }
+    
+    .faculty-banner h2{
+        font-size: 30pt;
+        padding-top: 130px;
+    }
+}
+
+#director {
+    padding: 35px;
+    height: auto;
+    background-image: url(images/bluewave.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+
+#professor {
+    border-top: 3pt solid #FFDD00;
+    border-bottom: 3pt solid #FFDD00;
+    padding: 35px;
+}
+
+#instructor {
+    padding: 35px;
+    height: auto;
+    background-image: url(images/Healthcar.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+
+
+.list-inline-item:hover {
+    background-color: #648EB8;
+
+}
+
+.faculty-heading {
+    font-family: 'Belgrano';
+}
+
+.team-man {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: -50px;
+    overflow: hidden;
+    min-height: 100px;
+    min-width: 100px;
+    height: 100px;
+    width: 100px;
+    border: 5px solid #FFDD00;
+    border-radius: 50%;
+}
+
+.team-mam img {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    border-radius: 50%;
+}
+
+.team-block h2 {
+    color: #FFDD00;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 70px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.team-block h5 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 30px;
+    text-align: center;
+}
+
+.team-block {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.team-block span {
+    color: #c6c6c6;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+.team-block p {
+    color: dimgrey;
+    font-size: 14px;
+    padding: 25px 15px;
+    line-height: 24px;
+}
+
+
+
+.team-block:hover {
+    background-color: #648EB8;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.team-block:hover .title h2,
+.team-block:hover .title span {
+    color: white;
+    transition: 0.3s ease;
+}
+
+.team-block:hover .team-description p {
+    color: #f9f9f9;
+    transition: 0.3s ease;
+}
+
+
+.team-area h2 {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+.team-area h2:after {
+    content: '';
+    background: #333;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
+}
+
+.team {
+    border-top: 3pt solid #FFDD00;
+    padding: 35px;
+}
+
+.team h2 {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+.team h2:after {
+    content: '';
+    background: #333;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
+}
+
+.team h3 {
+    font-size: 15pt;
+    text-align: center;
+}
+
+/*Our Team*/
+
+.profile {
+    margin-top: 25px;
+}
+
+.profile .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+.profile h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+.profile .img-box:after {
+    content: '';
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.profile .img-box ul {
+    margin: 0;
+    padding: 20px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.profile .img-box ul li {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 3px;
+    padding: 7px;
+    display: inline-block;
+}
+
+.profile .img-box a {
+    color: #fff;
+}
+
+.profile .img-box:hover:after {
+    opacity: 1;
+}
+
+.profile .img-box:hover ul {
+    opacity: 1;
+}
+
+.profile .img-box a:hover li {
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+
+
+/********Gallery********/
+
+/********Gallery********/
+
+
+.gallery-banner{
+    text-align: center;
+    background-image: url(images/image4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    height: 720px;
+    width: 100%;
+     border-radius: 0 0 85% 85% / 30%;
+    border-bottom: 3px solid #648EB8;
+}
+
+
+
+.gallery-banner h2{
+    color: white;
+    font-size: 50pt;
+    text-align: center;
+    padding-top: 20%;
+    text-shadow: 2px 2px black;
+}
+
+.gallery-banner a{
+    font-size: 20pt;
+    padding: 15px;
+}
+
+
+@media (max-width: 800px){
+.gallery-banner{
+        height: 520px;
+    }
+    
+   .gallery-banner h2{
+        font-size: 35pt;
+       padding-top: 130px;
+    }
+}
+
+
+a {
+    color: #4ab19a;
+}
+
+
+.clear {
+    clear: both;
+    float: none;
+    width: 100%;
+}
+
+
+.gallery-wrapper {
+    max-width: 1170px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 5%;
+    height: auto;
+}
+
+.gallery-wrapper .gallery a img {
+    float: left;
+    width: 20%;
+    height: auto;
+    border: 2px solid #fff;
+    -webkit-transition: -webkit-transform .15s ease;
+    -moz-transition: -moz-transform .15s ease;
+    -o-transition: -o-transform .15s ease;
+    -ms-transition: -ms-transform .15s ease;
+    transition: transform .15s ease;
+    position: relative;
+}
+
+.gallery-wrapper .gallery a:hover img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    z-index: 5;
+}
+
+.gallery-wrapper .gallery a.big img {
+    width: 40%;
+}
+
+
+.align-center {
+    text-align: center;
+    font-family: 'Belgrano';
+    padding: 35px;
+}
+
+
+
+/* About Us page/ Department History*/
+
+.about-banner {
+    text-align: center;
+    text-align: center;
+    background-image: url(images/nursing%20dp%20bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 720px;
+    background-repeat: no-repeat;
+     border-radius: 0 0 85% 85% / 30%;
+    position: relative;
+    border-bottom: 3px solid #648EB8;
+}
+
+.about-banner h2{
+    color: white;
+    font-size: 45pt;
+    text-align: center;
+    padding-top: 20%;
+    text-shadow: 2px 2px black;
+}
+
+.about-banner a{
+    font-size: 20pt;
+    padding: 15px;
+}
+
+@media (max-width: 800px){
+.about-banner {
+        height: 520px;
+    }
+    
+.about-banner  h2{
+        font-size: 25pt;
+      padding-top: 130px;
+    }
+    
+    .about-banner a{
+        margin-top: -40px;
+    }
+}
+
+
+@media (max-width: 900px){
+    .about-banner{
+        height: 420px;
+    }
+}
+
+.history-content h2 {
+    padding: 25px;
+    text-align: center;
+
+}
+
+.history-content {
+    margin-top: 5%;
+}
+
+
+.history-content p {
+    padding: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+
+
+/*--Form---*/
+
+.contact-form {
+    height: auto;
+    background: whitesmoke;
+    color: black;
+    box-sizing: border-box;
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: bold;
+    padding: 30px;
+    opacity: 0.9;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@media (max-width: 900px) {
+    .contact-form {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+
+.contact-form h2 {
+    text-align: center;
+    padding: 25px;
+}
+
+.contact-form input {
+    width: 99%;
+    margin-bottom: 20px;
+    padding-left: 2%;
+
+}
+
+.contact-form input[type="text"],
+input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+
+
+}
+
+.contact-form input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #9EB0CB;
+    color: black;
+    font-size: 18px;
+    font-family: 'ABeeZee', sans-serif;
+    border-radius: 20px;
+
+
+}
+
+.contact-form input[type="submit"]:hover {
+    cursor: pointer;
+    background: #39dc79;
+}
+
+textarea {
+    background: #fff;
+    width: 310px;
+    font-size: 18px;
+    margin: 1px;
+    resize: vertical;
+
+
+
+}
+
+.contact-form-holder {
+    background-image: url(images/contact.jpg);
+    background-size: cover;
+    height: auto;
+    background-attachment: fixed;
+
+
+
+}
+
+.location-wrapper{
+    height: auto;
+    background: whitesmoke;
+    color: black;
+    box-sizing: border-box;
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: bold;
+    padding: 30px;
+    opacity: 0.9;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.location-wrapper h2{
+    text-align: center;
+    padding: 25px;
+}
+
+.location-wrapper i{
+    font-size: 45px;
+    padding: 20px; 
+}
+
+.location-wrapper p{
+    text-align: center;
+    padding: 15px;
+    font-size: 14pt;
+}
+
+iframe {
+    width: 100%;
+    height: 480px;
+}
+
+
+/********Bulletin********/
+
+.bulletin-banner{
+    text-align: center;
+    background-image: url(images/Healthcare-Tech.jpg);
+     background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    height: 720px;
+    width: 100%;
+     border-radius: 0 0 85% 85% / 30%;
+    border-bottom: 3px solid #648EB8;
+}
+
+
+.bulletin-banner h2{
+    color: white;
+    font-size: 45pt;
+    text-align: center;
+    padding-top: 20%;
+    text-shadow: 2px 2px black;
+}
+
+.bulletin-banner a{
+    font-size: 20pt;
+    padding: 15px;
+}
+
+@media (max-width: 800px){
+.bulletin-banner {
+        height: 520px;
+    }
+    
+.bulletin-banner h2{
+        font-size: 30pt;
+        padding-top: 130px;
+    }
+    
+}
+
+
+/*--Edit Table*/
+table {
+    border-collapse: collapse;
+    border-radius: 50%;
+    list-style-type: none;
+    text-align: center;
+    height: auto;
+    width: 60%;
+    margin-left: 17%;
+    margin-right: 20%;
+
+
+}
+
+table th {
+    font-size: 1em;
+    color: black;
+    text-align: center;
+
+}
+
+table td {
+    border: 1px white;
+    padding: 10px 5px;
+
+}
+
+h6 {
+    text-align: center;
+}

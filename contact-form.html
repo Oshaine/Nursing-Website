@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--Swiper min css-->
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+
+    <!--nav side bar -->
+    <link rel="stylesheet" type="text/css" href="css/b4_sidebar.css">
+
+    <script src="js/b4_sidebar.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="aos.css">
+
+    <script src="aos.js"></script>
+
+    <!--Google Font-->
+
+    <link href='https://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Kadwa' rel='stylesheet'>
+
+
+    <!-- JQuery 3.3.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Bootstrap 4.1.3 min css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+
+    <!-- Bootstrap 4.1.3 min js 
+    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    -->
+    <!--Popper.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <!--Font-Awesome 5.5 min css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+
+        <!--Main Navigation Bar-->
+
+
+        <nav class="navbar navbar-expand-md navbar-dark sidebarNavigation custom-nav" data-sidebarClass="navbar-dark custom-nav">
+
+
+            <button class="navbar-toggler leftNavbarToggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <a class="navbar-brand" href="home.html"><img src="images/NDP%20Logo.png" alt="Logo" width="100"></a>
+                <div class="dropdown-divider"></div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home
+
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Prospective Students</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="admission.html">Admissions</a>
+                            <a class="dropdown-item" href="program.html">Offered Program</a>
+                            <a class="dropdown-item" href="http://www.ncu.edu.jm/tuitionfees" target="_blank">Tuititon &amp; Fees</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Current Students</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown02">
+                            <a class="dropdown-item" href="https://aeorion.ncu.edu.jm/" target="_blank">Aeorion</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="bulletin.html">Bulletin</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faculty.html">Faculty &amp; Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact-form.html">Contact Us</a>
+                        <span class="sr-only">(current)</span>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+        <!--End Main Navigation Bar-->
+
+    </header>
+    
+      <a class="gotopbtn" href=""><i class="fas fa-chevron-up"></i></a>
+
+    <!--Contact Form-->
+    <div class="contact-form-holder">
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+
+                <div class="contact-form">
+
+
+                    <h2>Contact Us</h2>
+                    <form id="form" method="post" action="mailto: " enctype="text/plain">
+                        <label> First Name:</label>
+                        <input type="text" name="fname" placeholder="Enter First Name" required>
+                        <label> Last Name:</label>
+                        <input type="text" name="lname" placeholder="Enter Last Name" required>
+                        <label> Email Address: </label>
+                        <input type="email" name="email" id="email_addr" placeholder="kristen@example.com" required>
+
+
+                        <label> Message:</label><br>
+                        <textarea name="message" class="form-control" rows="5" cols="5" placeholder="Message" required></textarea>
+                        <br>
+                        <input type="submit" class="form-control submit" value="SEND">
+                    </form>
+
+                </div>
+                <br><br>
+
+            </div>
+
+
+            <div class="col-md-6 col-sm-12 col-xs-12">
+
+                <div class="location-wrapper">
+
+
+                    <h2>Department of Nursing</h2>
+
+                    <p>
+                        <i class="fa fa-home mr-3"></i> <br>Manchester Rd, Mandeville Manchester, Jamaica W.I</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> <br> nursingdept@ncu.edu.jm</p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> <br> +1 876 963-7109</p>
+                    <p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!--GOOGLE MAPS-->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4718.753642375799!2d-77.50022743640538!3d18.012647426242616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8edb958c6aa4f1f3%3A0xfd1e54c3b075a8c!2sHyacinth+Chen+School+of+Nursing!5e0!3m2!1sen!2sjm!4v1542576858200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </div>
+
+
+
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Footer links -->
+            <div class="row text-center text-md-left mt-3 pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Northern Caribbean University Department of Nursing</h6>
+                    <img src="images/NDP%20Logo.png" alt="Nursing Department Logo">
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 links">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Quick Links</h6>
+                    <p>
+                        <i class="fas fa-link"></i> <a href="https://aeorion.ncu.edu.jm/" target="_blank">Aeorion</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-link"></i> <a href="https://www.ncu.edu.jm/" target="_blank">Northern Caribbean University</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-link"></i> <a href="https://www.ncu.edu.jm/applicationform" target="_blank">Application Form</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-link"></i> <a href="https://www.ncu.edu.jm/publicsafety" target="_blank">Public Safety</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 links">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Departments</h6>
+                    <p>
+                        <i class="fas fa-link"></i> <a href="https://www.ncu.edu.jm/records" target="_blank">University Records</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-link"></i> <a href="http://www.ncu.edu.jm/undergradrequirements" target="_blank">Admissions</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-link"></i> <a href="http://www.ncu.edu.jm/finance" target="_blank">Student Finance</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-link"></i> <a href="http://www.ncu.edu.jm/ssa" target="_blank">Scholarship and Student Aid</a>
+                    </p>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p>
+                        <i class="fa fa-home mr-3"></i> Manchester Rd, Mandeville Manchester, Jamaica W.I</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> nursingdept@ncu.edu.jm</p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> +1 876 963-7109</p>
+                    <p>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Footer links -->
+
+            <hr>
+
+            <!-- Grid row -->
+            <div class="row d-flex align-items-center">
+                
+                
+
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-8">
+                      
+                    
+
+                    <!--Copyright-->
+                    <p class="text-center text-md-left">© 2018 Copyright:
+                        <a href="home.html">
+                            <strong> NCU Department of Nursing</strong>
+                        </a>
+                    </p>
+                  
+
+               <p class="text-center" style="float: left;">
+                        <a href="Website%20Diagram.pdf" target="_blank">Website Diagram</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0">
+
+                    <!-- Social buttons -->
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/ncueducation/" target="_blank" class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/ncueducation" target="_blank" class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://plus.google.com/106251138258617752932" target="_blank" class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/school/northern-caribbean-university/" target="_blank" class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/ncu_jamaica/" target="_blank" class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/user/ncueducation" target="_blank" class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+    </footer>
+    <!-- Footer -->
+</body>
+
+
+</html>
