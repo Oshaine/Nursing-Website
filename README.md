@@ -1,2 +1,2 @@
 # Nursing-Website
-Northern Caribbean University Website - Web
+Northern Caribbean University Website - Class Project
