@@ -613,7 +613,7 @@ li.dropdown {
 /*SEction 2*/
 
 .section2-container {
-    background-image: url(images/Nurse-with-heart-hands.jpg);
+    background-image: url('../images/Nurse-with-heart-hands.jpg');
 
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -897,7 +897,7 @@ footer .fa-link {
 .program-objective {
     border-top: 3pt solid #648EB8;
     color: white;
-    background-image: url(images/176899.jpg);
+    background-image: url('../images/176899.jpg');
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -925,7 +925,7 @@ footer .fa-link {
 }
 
 .tuition-fees {
-    background-image: url(images/Healthcar.jpg);
+    background-image: url('../images/Healthcar.jpg');
     height: auto;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -957,7 +957,7 @@ footer .fa-link {
 
 .faculty-banner{
     text-align: center;
-    background-image: url(images/doctor-s-stethoscope.jpg);
+    background-image: url('../images/doctor-s-stethoscope.jpg');
     background-size: cover;
     height: 720px;
     background-position: center;
@@ -996,7 +996,7 @@ footer .fa-link {
 #director {
     padding: 35px;
     height: auto;
-    background-image: url(images/bluewave.jpg);
+    background-image: url('../images/bluewave.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -1012,7 +1012,7 @@ footer .fa-link {
 #instructor {
     padding: 35px;
     height: auto;
-    background-image: url(images/Healthcar.jpg);
+    background-image: url('../images/Healthcar.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1234,7 +1234,7 @@ footer .fa-link {
 
 .gallery-banner{
     text-align: center;
-    background-image: url(images/image4.jpg);
+    background-image: url('../images/image4.jpg');
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
@@ -1336,7 +1336,7 @@ a {
 .about-banner {
     text-align: center;
     text-align: center;
-    background-image: url(images/nursing%20dp%20bg1.jpg);
+    background-image: url('../images/nursing%20dp%20bg1.jpg');
     background-size: cover;
     background-position: center;
     height: 720px;
@@ -1478,7 +1478,7 @@ textarea {
 }
 
 .contact-form-holder {
-    background-image: url(images/contact.jpg);
+    background-image: url('../images/contact.jpg');
     background-size: cover;
     height: auto;
     background-attachment: fixed;
@@ -1528,7 +1528,7 @@ iframe {
 
 .bulletin-banner{
     text-align: center;
-    background-image: url(images/Healthcare-Tech.jpg);
+    background-image: url('../images/Healthcare-Tech.jpg');
      background-repeat: no-repeat;
     background-position: center;
     position: relative;
